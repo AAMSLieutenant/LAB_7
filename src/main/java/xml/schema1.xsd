@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="weapons" type="weaponsType"/>
+  <xs:complexType name="steelarmType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="handy"/>
+      <xs:element name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="SWORD"/>
+            <xs:enumeration value="KNIFE"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="origin"/>
+      <xs:element type="xs:string" name="collectible"/>
+      <xs:element type="xs:string" name="bladeLength"/>
+      <xs:element type="xs:string" name="bladeWidth"/>
+      <xs:element type="xs:string" name="material"/>
+      <xs:element type="xs:string" name="handle"/>
+      <xs:element type="xs:string" name="bloodFlow"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="weaponsType">
+    <xs:sequence>
+      <xs:element type="steelarmType" name="steelarm" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

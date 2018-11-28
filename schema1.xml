@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<steelArms>
+  <steelArm>
+    <bladeLength>70</bladeLength>
+    <bladeWidth>2.8</bladeWidth>
+    <bloodFlow>false</bloodFlow>
+    <collectible>false</collectible>
+    <handle>wood</handle>
+    <handy>ONE</handy>
+    <material>steel</material>
+    <origin>Ukraine</origin>
+    <type>KNIFE</type>
+  </steelArm>
+  <steelArm>
+    <bladeLength>780</bladeLength>
+    <bladeWidth>4</bladeWidth>
+    <bloodFlow>true</bloodFlow>
+    <collectible>true</collectible>
+    <handle>metal</handle>
+    <handy>ONE</handy>
+    <material>steel</material>
+    <origin>England</origin>
+    <type>SWORD</type>
+  </steelArm>
+</steelArms>

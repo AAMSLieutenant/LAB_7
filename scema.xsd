@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <!-- XML Schema Generated from XML Document on Fri Nov 16 2018 16:49:19 GMT+0200 (Восточная Европа, стандартное время) -->
+          <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+       <xs:element name="BookCatalogue">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="Book" maxOccurs="unbounded">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="Title" type="xs:string"></xs:element>
+                                                 <xs:element name="Author" type="xs:string"></xs:element>
+                                                 <xs:element name="Date" type="xs:int"></xs:element>
+                                                 <xs:element name="ISBN" type="xs:string"></xs:element>
+                                                 <xs:element name="Publisher" type="xs:string"></xs:element>
+                                                 <xs:element name="Cost" type="xs:double">
+                                                        <xs:complexType>
+                                                               <xs:attribute name="currency" type="xs:string"></xs:attribute>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                        </xs:sequence>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema>

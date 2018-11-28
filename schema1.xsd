@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="steelArms" type="steelArmsType"/>
+  <xs:complexType name="steelArmType">
+    <xs:sequence>
+      <xs:element name="bladeLength">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="70"/>
+            <xs:enumeration value="780"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="bladeWidth">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2.8"/>
+            <xs:enumeration value="4"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="bloodFlow">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="true"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="collectible">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="true"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="handle">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="wood"/>
+            <xs:enumeration value="metal"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="handy"/>
+      <xs:element type="xs:string" name="material"/>
+      <xs:element name="origin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ukraine"/>
+            <xs:enumeration value="England"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="KNIFE"/>
+            <xs:enumeration value="SWORD"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="steelArmsType">
+    <xs:sequence>
+      <xs:element type="steelArmType" name="steelArm" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<steelarms>
+    <steelarm>
+        <handy>ONE</handy>
+        <type>SWORD</type>
+        <origin>Ukraine</origin>
+        <collectible>false</collectible>
+        <bladeLength>70.0</bladeLength>
+        <bladeWidth>3.0</bladeWidth>
+        <material>steel</material>
+        <handle>wood</handle>
+        <bloodFlow>true</bloodFlow>
+    </steelarm>
+    <steelarm>
+        <handy>ONE</handy>
+        <type>DAGGER</type>
+        <origin>Ukraine</origin>
+        <collectible>false</collectible>
+        <bladeLength>70.0</bladeLength>
+        <bladeWidth>3.0</bladeWidth>
+        <material>steel</material>
+        <handle>wood</handle>
+        <bloodFlow>true</bloodFlow>
+    </steelarm>
+    <steelarm>
+        <handy>ONE</handy>
+        <type>DAGGER</type>
+        <origin>Ukraine</origin>
+        <collectible>false</collectible>
+        <bladeLength>70.0</bladeLength>
+        <bladeWidth>3.0</bladeWidth>
+        <material>steel</material>
+        <handle>wood</handle>
+        <bloodFlow>true</bloodFlow>
+    </steelarm>
+    <steelarm>
+        <handy>ONE</handy>
+        <type>DAGGER</type>
+        <origin>USA</origin>
+        <collectible>true</collectible>
+        <bladeLength>50.0</bladeLength>
+        <bladeWidth>3.6</bladeWidth>
+        <material>steel</material>
+        <handle>wood</handle>
+        <bloodFlow>true</bloodFlow>
+    </steelarm>
+</steelarms>

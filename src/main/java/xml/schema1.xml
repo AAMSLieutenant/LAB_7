@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<weapons>
+  <steelarm>
+    <handy>ONE</handy>
+    <type>SWORD</type>
+    <origin>Ukraine</origin>
+    <collectible>false</collectible>
+    <bladeLength>70.0</bladeLength>
+    <bladeWidth>3.0</bladeWidth>
+    <material>steel</material>
+    <handle>wood</handle>
+    <bloodFlow>true</bloodFlow>
+  </steelarm>
+  <steelarm>
+    <handy>ONE</handy>
+    <type>KNIFE</type>
+    <origin>Ukraine</origin>
+    <collectible>false</collectible>
+    <bladeLength>70.0</bladeLength>
+    <bladeWidth>3.0</bladeWidth>
+    <material>steel</material>
+    <handle>wood</handle>
+    <bloodFlow>true</bloodFlow>
+  </steelarm>
+</weapons>
