@@ -11,4 +11,15 @@
         <handle>wood</handle>
         <bloodFlow>true</bloodFlow>
     </steelarm>
+    <steelarm>
+        <handy>TWO</handy>
+        <type>DAGGER</type>
+        <origin>USA</origin>
+        <collectible>true</collectible>
+        <bladeLength>50.0</bladeLength>
+        <bladeWidth>3.6</bladeWidth>
+        <material>steel</material>
+        <handle>wood</handle>
+        <bloodFlow>true</bloodFlow>
+    </steelarm>
 </steelarms>

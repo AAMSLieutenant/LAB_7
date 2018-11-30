@@ -80,7 +80,7 @@ public class STAX {
                         if (handy.equals("TWO")) {
                             arm.setHandy(Handy.TWO);
                         }
-                        System.out.println("HANDY "+handy);
+//                        System.out.println("HANDY "+handy);
                     } else if (startElement.getName().getLocalPart().equalsIgnoreCase("type")) {
                         xmlEvent = xmlEventReader.nextEvent();
                         String type = xmlEvent.asCharacters().getData();
@@ -93,7 +93,7 @@ public class STAX {
                         if (type.equals("SWORD")) {
                             arm.setType(Type.SWORD);
                         }
-                        System.out.println("TYPE "+type);
+//                        System.out.println("TYPE "+type);
                     } else if (startElement.getName().getLocalPart().equalsIgnoreCase("origin")) {
                         xmlEvent = xmlEventReader.nextEvent();
                         String origin = xmlEvent.asCharacters().getData();
@@ -109,24 +109,24 @@ public class STAX {
                         if (collectible.equals("false")) {
                             arm.setCollectible(false);
                         }
-                        System.out.println("COLLECTIBLE "+collectible);
+//                        System.out.println("COLLECTIBLE "+collectible);
                     } else if (startElement.getName().getLocalPart().equalsIgnoreCase("bladeLength")) {
                         xmlEvent = xmlEventReader.nextEvent();
                         double bladeLength = Double.parseDouble(xmlEvent.asCharacters().getData());
                         arm.setBladeLength(bladeLength);
-                        System.out.println("BLADELENGTH "+bladeLength);
+//                        System.out.println("BLADELENGTH "+bladeLength);
                     }
                     else if (startElement.getName().getLocalPart().equalsIgnoreCase("bladeWidth")) {
                         xmlEvent = xmlEventReader.nextEvent();
                         double bladeWidth = Double.parseDouble(xmlEvent.asCharacters().getData());
                         arm.setBladeWidth(bladeWidth);
-                        System.out.println("BLADEWIDTH "+bladeWidth);
+//                        System.out.println("BLADEWIDTH "+bladeWidth);
                     }
                     else if (startElement.getName().getLocalPart().equalsIgnoreCase("material")) {
                         xmlEvent = xmlEventReader.nextEvent();
                         String material = xmlEvent.asCharacters().getData();
                         arm.setMaterial(material);
-                        System.out.println("MATERIAL "+material);
+//                        System.out.println("MATERIAL "+material);
                     }
                     else if (startElement.getName().getLocalPart().equalsIgnoreCase("handle")) {
                         xmlEvent = xmlEventReader.nextEvent();
@@ -143,7 +143,7 @@ public class STAX {
                         if (bloodFlow.equals("false")) {
                             arm.setBloodFlow(false);
                         }
-                        System.out.println("BLOODFLOW "+bloodFlow);
+//                        System.out.println("BLOODFLOW "+bloodFlow);
                     }
                     //if Employee end element is reached, add employee object to list
 
@@ -156,8 +156,8 @@ public class STAX {
 
                     if (endElement.getName().getLocalPart().equalsIgnoreCase("steelarm")) {
                         System.out.println("END ELEMENT----------------");
-                        System.out.println("ENDING fffffffffffffffffffffELEMENT ");
-                        System.out.println("ARM "+arm);
+//                        System.out.println("ENDING fffffffffffffffffffffELEMENT ");
+                        System.out.println(arm);
                         armList.add(arm);
                     }
                 }

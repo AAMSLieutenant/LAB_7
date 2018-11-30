@@ -32,7 +32,7 @@ public class Application {
 
     //        JAXBParser parser=new JAXBParser();
 //           JAXBParser.readXML("TEST_WEAPON_FILE.xml");
-    //        JAXBParser.insertXML(steelarm, "TEST_WEAPON_FILE.xml");
+//            JAXBParser.insertXML(steelarm, "TEST_WEAPON_FILE.xml");
 
 
 //            SAX.parse("TEST_WEAPON_FILE.xml");
